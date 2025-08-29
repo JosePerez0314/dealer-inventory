@@ -6,10 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealer Inventory</title>
     <link rel="icon" href="assets/frontPage.jpg" type="image/png">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Sedi Motors" class="logo">
+            <button class="ham"><i class="fa-solid fa-bars"></i></button>
+        </div>
 
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="nav__li"><a href="#"><i class="fa-solid fa-plus"></i>Add Vehicle</a></li>
+                <li class="nav__li"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+                <li class="nav__li"><a href="#"><i class="fa-solid fa-robot"></i>Generate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <form class="search-container">
+            <input type="text" placeholder="Write the car's name">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <div class="cars-container">
+            <div class="cars__car crv">
+                <img src="assets/crv.jpeg" alt="Honda CRV 2022">
+                <h3>Honda CRV 2022</h3>
+                <p><strong>Mileage:</strong> 15,000 miles</p>
+                <p><strong>Color:</strong> Gray</p>
+                <p><strong>Condition:</strong> Used</p>
+            </div>
+
+            <div class="cars__car jeep">
+                <img src="assets/jeep.jpeg" alt="Grand Cherokee Limited 2013">
+                <h3>Jeep Grand Cherokee Limited 2013</h3>
+                <p><strong>Mileage:</strong> 85,000 miles</p>
+                <p><strong>Color:</strong> Black</p>
+                <p><strong>Condition:</strong> Used</p>
+            </div>
+
+            <div class="cars__car corolla">
+                <img src="assets/corolla.jpeg" alt="Toyota Corolla 2020">
+                <h3>Toyota Corolla 2020</h3>
+                <p><strong>Mileage:</strong> 25,000 miles</p>
+                <p><strong>Color:</strong> White</p>
+                <p><strong>Condition:</strong> Certified Pre-Owned</p>
+            </div>
+
+            <div class="cars__car outlander">
+                <img src="assets/outlander.jpeg" alt="Mitsubishi Outlander 2020">
+                <h3>Mitsubishi Outlander 2020</h3>
+                <p><strong>Mileage:</strong> 30,000 miles</p>
+                <p><strong>Color:</strong> White</p>
+                <p><strong>Condition:</strong> Certified Pre-Owned</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="assets/logo.png" alt="Sedi Motors">
+        <p>&copy; 2025 Sedi Motors. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/99cbbdca64.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

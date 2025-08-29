@@ -7,6 +7,8 @@
     <title>Dealer Inventory</title>
     <link rel="icon" href="assets/frontPage.jpg" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="search.html">
 </head>
 
 <body>
@@ -18,20 +20,22 @@
 
         <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__li"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="nav__li"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li class="nav__li"><a href="#"><i class="fa-solid fa-plus"></i>Add Vehicle</a></li>
-                <li class="nav__li"><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+                <li class="nav__li"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
                 <li class="nav__li"><a href="#"><i class="fa-solid fa-robot"></i>Generate</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
-        <img src="assets/major.png" alt="Sedi Motors">
-        <h1>Sedi Motors</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione aliquam accusamus odio voluptatem
+        <img src="assets/major.png" alt="Sedi Motors" class="major">
+        <img src="assets/logo.png" alt="Sedi" class="sedi">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ratione aliquam accusamus odio
+            voluptatem
             rerum
-            eos. Doloribus, nulla voluptatem perspiciatis eius inventore officia? Cumque, animi natus. Hic doloremque
+            eos. Doloribus, nulla voluptatem perspiciatis eius inventore officia? Cumque, animi natus. Hic
+            doloremque
             sint
             enim?</p>
     </main>
@@ -40,26 +44,28 @@
 
         <h2>Vehiculos</h2>
 
-        <div class="cars__car crv">
-            <img src="assets/crv.jpeg" alt="Honda CRV 2022">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quae laudantium, qui ad ut veritatis
-                suscipit
-                cum nihil molestias labore veniam modi id culpa autem, inventore incidunt aut dolor odio.</p>
-        </div>
-        <div class="cars__car jeep">
-            <img src="assets/jeep.jpeg" alt="Grand Cherokee Limited 2013">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quae laudantium, qui ad ut veritatis
-                suscipit
-                cum nihil molestias labore veniam modi id culpa autem, inventore incidunt aut dolor odio.</p>
-        </div>
-        <div class="cars__car corolla">
-            <img src="assets/corolla.jpeg" alt="Toyota Corolla 2020">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quae laudantium, qui ad ut veritatis
-                suscipit
-                cum nihil molestias labore veniam modi id culpa autem, inventore incidunt aut dolor odio.</p>
-        </div>
+        <div class="cars-container">
+            <div class="cars__car crv">
+                <img src="assets/crv.jpeg" alt="Honda CRV 2022">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quae laudantium, qui ad ut veritatis
+                    suscipit
+                    cum nihil molestias labore veniam modi id culpa autem, inventore incidunt aut dolor odio.</p>
+            </div>
+            <div class="cars__car jeep">
+                <img src="assets/jeep.jpeg" alt="Grand Cherokee Limited 2013">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quae laudantium, qui ad ut veritatis
+                    suscipit
+                    cum nihil molestias labore veniam modi id culpa autem, inventore incidunt aut dolor odio.</p>
+            </div>
+            <div class="cars__car corolla">
+                <img src="assets/corolla.jpeg" alt="Toyota Corolla 2020">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quae laudantium, qui ad ut veritatis
+                    suscipit
+                    cum nihil molestias labore veniam modi id culpa autem, inventore incidunt aut dolor odio.</p>
+            </div>
 
-        <p class="more"><a href="#">Ver mas <i class="fa-solid fa-plus"></i></a></p>
+            <button class="more"><a href="#">See more <i class="fa-solid fa-plus"></i></a></button>
+        </div>
     </section>
 
     <footer>

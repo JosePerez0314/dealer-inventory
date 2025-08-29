@@ -1,0 +1,93 @@
+:root {
+    --red-color: #CB2D2B;
+    --black-color: #353535;
+    --gray-color: #6F6F6F;
+    --white-color: #fcfcfc;
+    --card-bg: #444;
+    /* fondo tarjetas */
+    --card-text: #fff;
+    /* texto dentro tarjetas */
+    --detail-text: #ddd;
+    /* detalles más claros */
+}
+
+#main {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main form {
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+#main form input {
+    font-size: 1.3em;
+    height: 50px;
+    width: 270px;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+
+#main form button {
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cars__car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 100%;
+    flex: 1 1 300px;
+}
+
+.cars__car:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.cars__car img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cars__car h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--card-text);
+}
+
+.cars__car p {
+    font-size: 0.9rem;
+    color: var(--detail-text);
+    line-height: 1.4;
+    margin: 0.2rem 0;
+}
+
+.cars__car p strong {
+    color: var(--card-text);
+}

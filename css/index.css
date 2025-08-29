@@ -1,0 +1,110 @@
+/* Main */
+
+#main {
+    color: var(--black-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.major {
+    min-height: 300px;
+    width: 100%;
+}
+
+.sedi {
+    width: 200px;
+    height: 170px;
+    border-radius: 15%;
+}
+
+#main p {
+    text-align: justify;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+/* Cars section */
+
+#cars {
+    background-color: var(--gray-color);
+    padding: 2rem 1rem;
+}
+
+#cars h2 {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    margin: 1rem 0 2em 0;
+    text-align: center;
+}
+
+.cars-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Individual card */
+.cars__car {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.cars__car:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* Car image */
+.cars__car img {
+    width: 8em;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Car description */
+.cars__car p {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+    line-height: 1.4;
+}
+
+.more {
+    text-align: center;
+    margin-top: 1rem;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    background-color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.more a {
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.more:hover,
+.more a:hover,
+.more i:hover {
+    transform: scale(1.1);
+    background-color: #444;
+}
