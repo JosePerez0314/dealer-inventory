@@ -6,10 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealer Inventory</title>
     <link rel="icon" href="assets/frontPage.jpg" type="image/png">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="search.html">
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Sedi Motors" class="logo">
+            <button class="ham"><i class="fa-solid fa-bars"></i></button>
+        </div>
 
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="nav__li"><a href="#"><i class="fa-solid fa-plus"></i>Add Vehicle</a></li>
+                <li class="nav__li"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+                <li class="nav__li"><a href="#"><i class="fa-solid fa-robot"></i>Generate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="add-container">
+        <h3>Car Details</h3>
+        <input type="text" placeholder="Made by" id="model">
+        <label for="model">Make</label>
+
+        <input type="number" placeholder="Enter the year" id="year">
+        <label for="year">Year</label>
+
+        <h4>Technical Information</h4>
+        <input type="number" id="millage">
+    </div>
+
+
+
+    <footer>
+        <img src="assets/logo.png" alt="Sedi Motors">
+        <p>&copy; 2025 Sedi Motors. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/99cbbdca64.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
