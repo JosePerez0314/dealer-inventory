@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealer Inventory</title>
     <link rel="icon" href="assets/frontPage.jpg" type="image/png">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/add.css">
     <link rel="stylesheet" href="search.html">
+    <link rel="stylesheet" href="index.html">
 </head>
 
 <body>
@@ -20,26 +22,83 @@
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__li"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li class="nav__li"><a href="#"><i class="fa-solid fa-plus"></i>Add Vehicle</a></li>
+                <li class="nav__li"><a href="add.html"><i class="fa-solid fa-plus"></i>Add Vehicle</a></li>
                 <li class="nav__li"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
-                <li class="nav__li"><a href="#"><i class="fa-solid fa-robot"></i>Generate</a></li>
+                <li class="nav__li"><a href="generate.html"><i class="fa-solid fa-robot"></i>Generate</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="add-container">
-        <h3>Car Details</h3>
-        <input type="text" placeholder="Made by" id="model">
-        <label for="model">Make</label>
+        <h4>Car Details</h4>
+        <label class="inline-label" for="model">
+            <span>Make:</span>
+            <input type="text" placeholder="Made by...." id="model">
+        </label>
 
-        <input type="number" placeholder="Enter the year" id="year">
-        <label for="year">Year</label>
+        <label class="inline-label" for="year">
+            <span>Year:</span>
+            <input type="number" placeholder="Enter the year...." id="year">
+        </label>
 
         <h4>Technical Information</h4>
-        <input type="number" id="millage">
-    </div>
+        <label class="inline-label" for="millage">
+            <span>Millage:</span>
+            <input type="number" id="millage" placeholder="Enter millage....">
+        </label>
 
+        <h4>Optional Features</h4>
 
+        <!-- Contenedor interno corregido -->
+        <div class="add-inner-container">
+            <h4>Car Details</h4>
+            <label class="inline-label" for="model-inner">
+                <span>Make:</span>
+                <input type="text" placeholder="Made by...." id="model-inner">
+            </label>
+
+            <label class="inline-label" for="year-inner">
+                <span>Year:</span>
+                <input type="number" placeholder="Enter the year...." id="year-inner">
+            </label>
+
+            <h4>Technical Information</h4>
+            <label class="inline-label" for="millage-inner">
+                <span>Millage:</span>
+                <input type="number" id="millage-inner" placeholder="Enter millage....">
+            </label>
+
+            <h4>Optional Features</h4>
+            <div class="slice-menu">
+                <label><input type="checkbox" name="air-conditions"> Air Conditions</label>
+                <label><input type="checkbox" name="sunroof"> Navigation System Sunroof</label>
+                <label><input type="checkbox" name="music"> Music</label>
+                <label><input type="checkbox" name="gps"> GPS</label>
+                <label><input type="checkbox" name="bluetooth"> Bluetooth</label>
+            </div>
+
+            <h4>Image Upload</h4>
+            <form action="#" class="upload-form" onsubmit="return false;">
+                <input type="file" name="image" id="image" accept="image/*">
+
+                <label for="image" class="file-trigger">
+                    <i class="fa-solid fa-image"></i> Choose image
+                </label>
+
+                <span class="file-name" id="file-name">No file selected</span>
+
+                <button type="button" class="btn-upload">
+                    <i class="fa-solid fa-plane"></i> Upload
+                </button>
+            </form>
+
+            <h4>Notes</h4>
+            <textarea name="notes" id="note" placeholder="Write something....."></textarea>
+
+            <button class="send-btn" type="button">Send</button>
+        </div> <!-- fin add-inner-container -->
+
+    </div> <!-- fin add-container -->
 
     <footer>
         <img src="assets/logo.png" alt="Sedi Motors">

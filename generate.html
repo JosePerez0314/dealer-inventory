@@ -6,10 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dealer Inventory</title>
     <link rel="icon" href="assets/frontPage.jpg" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/add.css">
+    <link rel="stylesheet" href="css/generate.css">
+    <link rel="stylesheet" href="search.html">
+    <link rel="stylesheet" href="index.html">
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="Sedi Motors" class="logo">
+            <button class="ham"><i class="fa-solid fa-bars"></i></button>
+        </div>
 
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="nav__li"><a href="add.html"><i class="fa-solid fa-plus"></i>Add Vehicle</a></li>
+                <li class="nav__li"><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+                <li class="nav__li"><a href="generate.html"><i class="fa-solid fa-robot"></i>Generate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="generate-container">
+        <h1>Generate Vehicle Description</h1>
+
+        <label for="generate">Enter car data:</label>
+        <textarea name="generate" id="generate"
+            placeholder="Write car info like make, model, year, features..."></textarea>
+
+        <button class="generate-btn" type="button">Generate</button>
+
+        <div class="output-container">
+            <h2>Generated Description</h2>
+            <p id="generated-text">Your generated description will appear here.</p>
+        </div>
+    </main>
+
+    <footer>
+        <img src="assets/logo.png" alt="Sedi Motors">
+        <p>&copy; 2025 Sedi Motors. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/99cbbdca64.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
