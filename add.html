@@ -8,8 +8,6 @@
     <link rel="icon" href="assets/frontPage.jpg" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/add.css">
-    <link rel="stylesheet" href="search.html">
-    <link rel="stylesheet" href="index.html">
 </head>
 
 <body>
@@ -30,27 +28,28 @@
     </header>
 
     <div class="add-container">
-        <h4>Car Details</h4>
-        <label class="inline-label" for="model">
-            <span>Make:</span>
-            <input type="text" placeholder="Made by...." id="model">
-        </label>
+        <form action="#" class="upload-form" onsubmit="return false;">
+            <h4>Car Details</h4>
+            <label class="inline-label" for="model">
+                <span>Make:</span>
+                <input type="text" placeholder="Made by...." id="model">
+            </label>
 
-        <label class="inline-label" for="year">
-            <span>Year:</span>
-            <input type="number" placeholder="Enter the year...." id="year">
-        </label>
+            <label class="inline-label" for="year">
+                <span>Year:</span>
+                <input type="number" placeholder="Enter the year...." id="year">
+            </label>
 
-        <h4>Technical Information</h4>
-        <label class="inline-label" for="millage">
-            <span>Millage:</span>
-            <input type="number" id="millage" placeholder="Enter millage....">
-        </label>
+            <h4>Technical Information</h4>
+            <label class="inline-label" for="millage">
+                <span>Millage:</span>
+                <input type="number" id="millage" placeholder="Enter millage....">
+            </label>
 
-        <h4>Optional Features</h4>
+            <h4>Optional Features</h4>
 
-        <!-- Contenedor interno corregido -->
-        <div class="add-inner-container">
+            <!-- Contenedor interno corregido -->
+
             <div class="slice-menu">
                 <label><input type="checkbox" name="air-conditions"> Air Conditions</label>
                 <label><input type="checkbox" name="sunroof"> Navigation System Sunroof</label>
@@ -60,26 +59,23 @@
             </div>
 
             <h4>Image Upload</h4>
-            <form action="#" class="upload-form" onsubmit="return false;">
-                <input type="file" name="image" id="image" accept="image/*">
+            <input type="file" name="image" id="image" accept="image/*">
 
-                <label for="image" class="file-trigger">
-                    <i class="fa-solid fa-image"></i> Choose image
-                </label>
+            <label for="image" class="file-trigger">
+                <i class="fa-solid fa-image"></i> Choose image
+            </label>
 
-                <span class="file-name" id="file-name">No file selected</span>
+            <span class="file-name" id="file-name">No file selected</span>
 
-                <button type="button" class="btn-upload">
-                    <i class="fa-solid fa-plane"></i> Upload
-                </button>
-            </form>
+            <button type="button" class="btn-upload">
+                <i class="fa-solid fa-plane"></i> Upload
+            </button>
 
             <h4>Notes</h4>
             <textarea name="notes" id="note" placeholder="Write something....."></textarea>
 
             <button class="send-btn" type="submit">Send</button>
-        </div> <!-- fin add-inner-container -->
-
+        </form>
     </div> <!-- fin add-container -->
 
     <footer>

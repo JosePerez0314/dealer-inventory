@@ -111,7 +111,8 @@
 /* Upload form (scopeado) */
 .add-container .upload-form {
     display: flex;
-    align-items: center;
+    align-items: self-start;
+    flex-direction: column;
     gap: 12px;
     width: 100%;
     max-width: 700px;
@@ -187,7 +188,7 @@
 }
 
 /* Responsive: que no se rompa en móvil */
-@media (max-width: 600px) {
+/* @media (max-width: 800px) {
     .add-container .upload-form {
         flex-wrap: wrap;
         gap: 10px;
@@ -196,11 +197,9 @@
     .add-container .file-name {
         flex: 1 1 100%;
         order: 3;
-        /* colocar debajo en móvil */
     }
 }
-
-
+ */
 /* Notes */
 .add-container textarea {
     width: 100%;
